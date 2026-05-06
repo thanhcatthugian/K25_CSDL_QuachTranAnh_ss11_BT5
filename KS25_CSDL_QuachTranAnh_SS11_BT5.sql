@@ -118,3 +118,10 @@ call find_bed('P0002','D01',@ann);
 select @ann;
 call find_bed('P0014','D01',@ann);
 select @ann;
+call find_bed('P0014','D36',@ann);
+select @ann;
+/*
+Sử dụng 2 in, 1 out để in thông báo
+1 biến ảo cho status của bệnh nhân 
+sử dụng exists để dễ dàng hơn trong việc truy vấn những hàng có giá trị null trong bảng beds 
+*/
